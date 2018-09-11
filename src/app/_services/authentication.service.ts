@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { map } from "rxjs/operators";
 
-import { environment } from '../../environments/environment';
+import { environment } from "../../environments/environment";
 
 @Injectable()
 export class AuthenticationService {
@@ -12,7 +12,7 @@ export class AuthenticationService {
         return this.http.post<any>(`${environment.apiUrl}/users/authenticate`, { username: username, password: password })
             .pipe(map(user => {
                 if (user && user.token) {
-                    localStorage.setItem('currentUser', JSON.stringify(user));
+                    localStorage.setItem("currentUser", JSON.stringify(user));
                 }
 
                 return user;

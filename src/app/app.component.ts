@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-    selector: 'app-root',
+    selector: "app-root",
     template: `
-       <!-- main app container -->
        <div class="jumbotron">
            <div class="container">
                <div class="row">
