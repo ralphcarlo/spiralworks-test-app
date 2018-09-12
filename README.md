@@ -10,7 +10,7 @@ You will need `angular-cli` installed to run the app, and `npm` to install its p
 
 ```
 git clone https://github.com/ralphcarlo/spiralworks-test-app.git
-cd spiralworks/
+cd spiralworks-test-app/
 npm install
 ```
 
