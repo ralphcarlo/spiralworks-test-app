@@ -1,10 +1,10 @@
-import { NgModule }      from "@angular/core";
+import { NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA }      from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 
 // used to create fake backend
-import { fakeBackendProvider } from "./_helpers";
+// import { fakeBackendProvider } from "./_helpers";
 
 import { AppComponent }  from "./app.component";
 import { routing } from "./app.routing";
@@ -40,7 +40,11 @@ import { RegisterComponent } from "./register";
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
         // provider used to create fake backend
-        fakeBackendProvider
+        // fakeBackendProvider
+    ],
+    schemas: [
+        NO_ERRORS_SCHEMA,
+        CUSTOM_ELEMENTS_SCHEMA
     ],
     bootstrap: [AppComponent]
 })

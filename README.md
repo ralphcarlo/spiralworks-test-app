@@ -1,27 +1,21 @@
-# Spiralworks
+# Login Registration Test App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
+This project is a test app to showcase both front end and backend development meant for a job application requirement. The frontend part of this app was developed by the author himself with the help of online sources and stock knowledge from his years of experience working on AngularJS and Angular 2 (v6). The backend on the other hand was taken from an outside source to simply run an actual backend, replacing a dummy local storage API created on the frontend.
 
-## Development server
+The author does not claim any ownership of the backend, and was only included for the purposes of testing server connections real-time.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Prerequisites
 
-## Code scaffolding
+You will need `angular-cli` installed to run the app. For the server, you must have Node JS and MongoDB for the `backend-api`. Make sure to run both simultaneously for the app to properly work.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setting Up
 
-## Build
+```
+git clone https://github.com/ralphcarlo/spiralworks-test-app.git
+cd spiralworks/
+ng serve
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Getting Started
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Once cloned locally, on the root folder of this app, run `ng serve`. Open another terminal and navigate to `spiralworks/backend-api` and then run `npm start`. Make sure that you have all the prerequisites installed as this will not work. Run `mongo` on a separate panel, then run `npm start` (both should be in `spiralworks/backend-api`).
