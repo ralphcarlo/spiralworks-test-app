@@ -18,4 +18,4 @@ ng serve
 
 ## Getting Started
 
-Once cloned locally, on the root folder of this app, run `ng serve`. Open another terminal and navigate to `spiralworks/backend-api` and then run `npm start`. Make sure that you have all the prerequisites installed as this will not work. Run `mongo` on a separate panel, then run `npm start` (both should be in `spiralworks/backend-api`).
+Once cloned locally, on the root folder of this app, run `ng serve`. Make sure that you have all the prerequisites installed as this will not work. Run `mongo` on a separate panel, then run `npm start` (both should be in `spiralworks/backend-api`).
