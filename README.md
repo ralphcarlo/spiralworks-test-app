@@ -14,6 +14,12 @@ cd spiralworks-test-app/
 npm install
 ```
 
+Directives, Services, and other core functions of the app are using an underscore on their directory names. By default, the app will not be able to recognize this as this is dependent on NPM underscore. If you do not have it installed yet, install this first before running the app.
+
+```
+npm install --save @types/underscore
+```
+
 ## Getting Started
 
 Once cloned locally, on the root folder of this app, run `ng serve`. Make sure that you have all the prerequisites installed and the server running.
